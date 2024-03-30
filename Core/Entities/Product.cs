@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Core.Entities
+{
+    public class Product : BaseEntity
+    {
+        public string Name { get; set; }
+        public int Stock { get; set; }
+        public string Description { get; set; }
+        public int CategoryId { get; set; }
+        public decimal Price { get; set; }
+        public Size Size { get; set; }
+        public Color Color { get; set; }
+        public Show Show { get; set; }
+        public PopularTag PopularTag { get; set; }
+        public SortBy SortBy { get; set; }
+        public ProductPopularity ProductPopularity { get; set; }
+        public Category Category { get; set; }
+    }
+}
